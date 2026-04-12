@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore — Exotic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-explore">
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="logo">Exotic</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" aria-current="page">Explore</a></li>
+        <li><a href="index.html#categories">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-explore-main">
+    <div class="explore-wrap">
+      <h1 class="explore-page-title">Explore</h1>
+      <p class="explore-page-lead reveal">Masonry moodboard—filter by mood, from global vistas to Indian heritage.</p>
+
+      <div class="filter-bar reveal" id="filterBar" role="group" aria-label="Filter by category">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="Nature">Nature</button>
+        <button type="button" class="filter-btn" data-filter="Quotes">Quotes</button>
+        <button type="button" class="filter-btn" data-filter="Inspiration">Inspiration</button>
+        <button type="button" class="filter-btn" data-filter="Travel">Travel</button>
+        <button type="button" class="filter-btn" data-filter="Indian Heritage">Indian Heritage</button>
+      </div>
+
+      <div class="explore-masonry-shell reveal">
+        <div class="explore-grid" id="exploreGrid" role="list" aria-live="polite"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">Made with ❤️ by Sugandhi Sharma</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="explore.js"></script>
+</body>
+</html>

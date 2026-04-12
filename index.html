@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exotic — Curated Beauty &amp; Inspiration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home">
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="logo">Exotic</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Welcome">
+      <div class="hero-video-wrap">
+        <div class="hero-gradient-fallback" aria-hidden="true"></div>
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-mountain-range-at-sunset-4049-large.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-mesh" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title hero-line-in" style="--hero-d: 0">Exotic</h1>
+        <p class="hero-subtitle hero-line-in" style="--hero-d: 1">Explore beauty, stories &amp; inspiration—rooted in Indian warmth, open to the world.</p>
+        <p class="hero-tagline hero-line-in" style="--hero-d: 2">Discover beauty beyond the ordinary</p>
+        <p class="hero-tagline hero-tagline--secondary hero-line-in" style="--hero-d: 3">Where culture meets calm</p>
+        <a href="explore.html" class="hero-cta hero-line-in" style="--hero-d: 4">Start Exploring</a>
+        <a href="#mood-journey" class="hero-scroll-hint hero-line-in" style="--hero-d: 5" aria-label="Scroll to explore moods">
+          <span class="hero-scroll-hint__label">Scroll</span>
+          <span class="hero-scroll-hint__arrow" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="name-footer">
+        <p class="creator-name">Sugandhi Sharma</p>
+      </div>
+    </section>
+
+    <section class="home-section home-mood-journey reveal" id="mood-journey" aria-labelledby="mood-heading">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="mood-heading" class="section-title">How are you feeling today?</h2>
+          <p class="section-lead">Tap a mood—we’ll take you somewhere that fits.</p>
+        </div>
+        <div class="mood-buttons" role="group" aria-label="Choose a mood">
+          <button type="button" class="mood-btn" data-mood-scroll="#section-trending">
+            Calm <span class="mood-emoji" aria-hidden="true">😌</span>
+          </button>
+          <button type="button" class="mood-btn" data-mood-scroll="#section-featured">
+            Inspired <span class="mood-emoji" aria-hidden="true">✨</span>
+          </button>
+          <button type="button" class="mood-btn" data-mood-scroll="#daily-highlight">
+            Lost <span class="mood-emoji" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="mood-btn" data-mood-scroll="#section-spiritual">
+            Spiritual <span class="mood-emoji" aria-hidden="true">🪔</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-roots-india reveal" id="roots-india" aria-labelledby="roots-heading">
+      <div class="section-inner">
+        <div class="section-head roots-head">
+          <h2 id="roots-heading" class="section-title">Roots of India <span class="roots-flag" aria-hidden="true">🇮🇳</span></h2>
+          <p class="roots-tagline">Where tradition meets timeless beauty</p>
+          <p class="section-lead">Temples, ghats, festivals, and architecture—layered in soft saffron and midnight blue.</p>
+        </div>
+        <div class="roots-grid">
+          <a href="explore.html#Indian%20Heritage" class="roots-card">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=640&h=480&fit=crop&q=80" alt="" loading="lazy">
+            <span class="roots-card__cap">Marble &amp; memory</span>
+          </a>
+          <a href="explore.html#Indian%20Heritage" class="roots-card">
+            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=640&h=480&fit=crop&q=80" alt="" loading="lazy">
+            <span class="roots-card__cap">Ghats &amp; prayers</span>
+          </a>
+          <a href="explore.html#Indian%20Heritage" class="roots-card">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=640&h=480&fit=crop&q=80" alt="" loading="lazy">
+            <span class="roots-card__cap">Festivals of light</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-daily-highlight reveal" id="daily-highlight" aria-labelledby="highlight-heading">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="highlight-heading" class="section-title">Today's Highlight</h2>
+          <p class="section-lead">One frame. A full story.</p>
+        </div>
+        <a href="explore.html#Indian%20Heritage" class="highlight-card">
+          <div class="highlight-card__media">
+            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&h=620&fit=crop&q=80" alt="" loading="lazy" width="1400" height="620">
+            <div class="highlight-card__veil"></div>
+            <div class="highlight-card__overlay">
+              <span class="highlight-card__eyebrow">Curated today</span>
+              <h3 class="highlight-card__title">The river remembers every footstep</h3>
+              <p class="highlight-card__desc">Varanasi at blue hour—smoke, bells, and water sharing one slow breath.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-section trending reveal" id="section-trending" aria-labelledby="trending-heading">
+      <div class="section-inner">
+        <div class="netflix-row-head">
+          <div class="section-head section-head--row">
+            <h2 id="trending-heading" class="section-title">Trending Now</h2>
+            <p class="section-lead">Fresh drops the community is loving this week.</p>
+          </div>
+          <div class="netflix-row-controls" role="toolbar" aria-label="Scroll trending row">
+            <button type="button" class="row-scroll-btn row-scroll-btn--prev" aria-label="Scroll left">‹</button>
+            <button type="button" class="row-scroll-btn row-scroll-btn--next" aria-label="Scroll right">›</button>
+          </div>
+        </div>
+        <div class="netflix-row-track">
+          <div class="card-row netflix-scroll" data-scroll-step="300" role="list">
+            <article class="card" role="listitem">
+              <a href="explore.html" class="card-link">
+                <div class="card-image-wrap" data-quote="Silence also speaks.">
+                  <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Mountain Light</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html" class="card-link">
+                <div class="card-image-wrap" data-quote="Stillness is a kind of music.">
+                  <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Starry Ridge</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html" class="card-link">
+                <div class="card-image-wrap" data-quote="Morning forgives the night.">
+                  <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Morning Mist</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html" class="card-link">
+                <div class="card-image-wrap" data-quote="The tide teaches patience.">
+                  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Coastal Calm</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html" class="card-link">
+                <div class="card-image-wrap" data-quote="Walk softly; the forest listens.">
+                  <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Forest Path</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html" class="card-link">
+                <div class="card-image-wrap" data-quote="Light leans toward the brave.">
+                  <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Golden Hour</h3>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-trending-in reveal" aria-labelledby="india-heading">
+      <div class="section-inner">
+        <div class="netflix-row-head">
+          <div class="section-head section-head--row">
+            <h2 id="india-heading" class="section-title">Trending in India</h2>
+            <p class="section-lead">Heritage, light, and color—handpicked from the subcontinent.</p>
+          </div>
+          <div class="netflix-row-controls" role="toolbar" aria-label="Scroll India row">
+            <button type="button" class="row-scroll-btn row-scroll-btn--prev" aria-label="Scroll left">‹</button>
+            <button type="button" class="row-scroll-btn row-scroll-btn--next" aria-label="Scroll right">›</button>
+          </div>
+        </div>
+        <div class="netflix-row-track">
+          <div class="card-row netflix-scroll" data-scroll-step="300" role="list">
+            <article class="card" role="listitem">
+              <a href="explore.html#Indian%20Heritage" class="card-link">
+                <div class="card-image-wrap" data-quote="Love is spelled in details here.">
+                  <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Marble &amp; Dawn</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html#Indian%20Heritage" class="card-link">
+                <div class="card-image-wrap" data-quote="Every wave carries an old prayer.">
+                  <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Varanasi Ghats</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html#Indian%20Heritage" class="card-link">
+                <div class="card-image-wrap" data-quote="Small flames, vast belonging.">
+                  <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Festival of Lights</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html#Indian%20Heritage" class="card-link">
+                <div class="card-image-wrap" data-quote="Slow water, long breaths.">
+                  <img src="https://images.pexels.com/photos/169677/pexels-photo-169677.jpeg?auto=compress&cs=tinysrgb&w=1260" alt="" width="480" height="270" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Kerala Waters</h3>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-spiritual reveal" id="section-spiritual" aria-labelledby="spiritual-heading">
+      <div class="section-inner">
+        <div class="netflix-row-head">
+          <div class="section-head section-head--row">
+            <h2 id="spiritual-heading" class="section-title">Spiritual Picks</h2>
+            <p class="section-lead">Temples, peaks, and stillness—sacred geometry in frame.</p>
+          </div>
+          <div class="netflix-row-controls" role="toolbar" aria-label="Scroll spiritual row">
+            <button type="button" class="row-scroll-btn row-scroll-btn--prev" aria-label="Scroll left">‹</button>
+            <button type="button" class="row-scroll-btn row-scroll-btn--next" aria-label="Scroll right">›</button>
+          </div>
+        </div>
+        <div class="netflix-row-track">
+          <div class="card-row netflix-scroll" data-scroll-step="300" role="list">
+            <article class="card" role="listitem">
+              <a href="explore.html#Inspiration" class="card-link">
+                <div class="card-image-wrap" data-quote="Begin again with the sun.">
+                  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">First Light Practice</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html#Indian%20Heritage" class="card-link">
+                <div class="card-image-wrap" data-quote="Petals open; so can you.">
+                  <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Lotus Petals</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html#Nature" class="card-link">
+                <div class="card-image-wrap" data-quote="Mist softens every edge.">
+                  <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Valley Mist</h3>
+              </a>
+            </article>
+            <article class="card" role="listitem">
+              <a href="explore.html#Quotes" class="card-link">
+                <div class="card-image-wrap" data-quote="The sky keeps your secrets.">
+                  <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=480&h=270&fit=crop&q=80" alt="" width="480" height="270" loading="lazy">
+                </div>
+                <h3 class="card-title">Words Under Stars</h3>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-categories reveal" id="categories" aria-labelledby="categories-heading">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="categories-heading" class="section-title">Explore Categories</h2>
+          <p class="section-lead">Nature, words, journeys, inspiration—and a dedicated lane for Indian heritage.</p>
+        </div>
+        <div class="category-grid category-grid--five">
+          <a href="explore.html#Nature" class="category-card">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=400&fit=crop&q=80" alt="" loading="lazy">
+            <span class="category-card-overlay"></span>
+            <span class="category-card-label">Nature</span>
+          </a>
+          <a href="explore.html#Quotes" class="category-card">
+            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600&h=400&fit=crop&q=80" alt="" loading="lazy">
+            <span class="category-card-overlay"></span>
+            <span class="category-card-label">Quotes</span>
+          </a>
+          <a href="explore.html#Inspiration" class="category-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=400&fit=crop&q=80" alt="" loading="lazy">
+            <span class="category-card-overlay"></span>
+            <span class="category-card-label">Inspiration</span>
+          </a>
+          <a href="explore.html#Indian%20Heritage" class="category-card category-card--heritage">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&h=400&fit=crop&q=80" alt="" loading="lazy">
+            <span class="category-card-overlay"></span>
+            <span class="category-card-label">Indian Heritage</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-featured reveal" id="section-featured" aria-labelledby="featured-heading">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="featured-heading" class="section-title">Featured Picks</h2>
+          <p class="section-lead">Editorial spots—marble glow, mountain hush, and midnight tide.</p>
+        </div>
+        <div class="featured-grid featured-grid--three">
+          <article class="featured-card">
+            <a href="explore.html" class="featured-card-link">
+              <div class="featured-card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=960&h=540&fit=crop&q=80" alt="" loading="lazy">
+                <div class="featured-card-caption">
+                  <span class="featured-card-eyebrow">Collection</span>
+                  <h3 class="featured-card-title">Nocturne &amp; Tide</h3>
+                  <p class="featured-card-desc">Deep blues and soft gold—moody coastlines after dark.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="featured-card">
+            <a href="explore.html" class="featured-card-link">
+              <div class="featured-card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=960&h=540&fit=crop&q=80" alt="" loading="lazy">
+                <div class="featured-card-caption">
+                  <span class="featured-card-eyebrow">Spotlight</span>
+                  <h3 class="featured-card-title">Alpine Silence</h3>
+                  <p class="featured-card-desc">Elevated stillness—peaks, mist, and first light.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">Made with ❤️ by Sugandhi Sharma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
